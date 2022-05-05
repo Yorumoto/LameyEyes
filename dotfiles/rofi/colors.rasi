@@ -1,0 +1,9 @@
+* {
+	// basically...
+	
+	transparent: #00000000;
+	white: #FFFFFF;
+	whole-background-color: #00000070;
+	item-background: #40404060;
+	selected: #FFFFFF40;
+}
