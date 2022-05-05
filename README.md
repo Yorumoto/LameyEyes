@@ -9,7 +9,7 @@ mitsu's 3rd theme ~~(he got bored of his desktop again)~~ designed to look like 
 - removed the maid or something, i dumped her into the dumpster lol
 - *corners!* (suck that windows 11 users)
 - **BLUR!!**
-- a thing that definitely written not from a [partygoer](https://backrooms.fandom.com/wiki/Partygoers)
+- a thing that is definitely written not from a [partygoer](https://backrooms.fandom.com/wiki/Partygoers)
 
 ## what else?
 you reached the bottom of this readme, yahoo!
