@@ -2,7 +2,7 @@
 
 mitsu's 3rd theme ~~(he got bored of his desktop again)~~ designed to look like something... interesting?
 
-![your computer isn't loading this cool desktop why](Yorumoto/LameyEyes/blob/main/docs/yay.png)
+![your computer isn't loading this cool desktop why](docs/yay.png)
 
 ## features:
 - lowercased language!
