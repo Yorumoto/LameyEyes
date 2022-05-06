@@ -5,7 +5,7 @@ shutdown="⏻"
 restart=""
 sleep=""
 lock=""
-logout=""
+# logout=""
 
 yes=""
 no=""
@@ -13,14 +13,30 @@ no=""
 roficmd="rofi -theme $dir/powermenu.rasi"
 rofinotify="rofi -theme $dir/notify.rasi"
 
-chosen=$(echo -e "$shutdown\n$restart\n$sleep\n$lock\n$logout" | $roficmd -p "terminating x session..." -dmenu)
+chosen=$(echo -e "$shutdown\n$restart\n$sleep\n$lock" | $roficmd -p "terminating x session..." -dmenu)
 
 if [[ $chosen == '' ]]; then
 	exit
 fi
 
-response=$(echo -e "$no\n$yes" | $roficmd -p "are you sure?" -dmenu)
+verb="unknown action"
 
+case $chosen in
+	$shutdown)
+		verb="powering off"
+	;;
+	$restart)
+		verb="rebooting"
+	;;
+	$sleep)
+		verb="sleeping"
+	;;
+	$lock)
+		verb="locking"
+	;;
+esac
+
+response=$(echo -e "$no\n$yes" | $roficmd -p "are you sure? ($verb)" -dmenu)
 
 if [[ $response != $yes ]]; then
 	exit

@@ -3,7 +3,8 @@
 configuration {
 	font: "Inter 20px";
 	show-icons: true;
-	display-drun: "";
+	// display-drun: "";
+	display-drun: "app search";
 	icon-theme: "Papirus";
 	drun-display-format: "{name}";
 }
@@ -21,29 +22,28 @@ window {
 entry {
 	width: 75%;
 	expand: true;
-	background-color: @item-background;	
+	background-color: @transparent;	
 	text-color: @white;
-	padding: 0.5%;
+	padding: 0%;
 	vertical-align: 0.5;
-	font: "Inter 20px";
-	placeholder: "search here =)";
-	// placeholder-color: #808080;
+	font: "Inter 40px";
+	placeholder: "input here pls";
+	placeholder-color: #808080;
 }
 
 prompt {
-	font: "Inter 25px";
-	background-color: @item-background;
+	font: "Inter bold 50px";
+	background-color: @transparent;
+	margin: 0 10px;
 	text-color: @white;
-	vertical-align: 0.65;
-	padding: 5px 10px;
-	height: 20px;
 }
 
 inputbar {
 	background-color: @transparent;
 	children: [prompt, entry];
+	layout: horizontal;
 	enabled: true;
-	border-radius: 5% 5% 5% 5%;
+	// border-radius: 5% 5% 5% 5%;
 }
 
 listview {
@@ -61,7 +61,7 @@ element {
 	orientation: vertical;
 	border-radius: 2% 1.5% 2% 1.5%;
 	padding: 10px 0px 10px 10px;
-	margin: 5px 5px 10px 10px;
+	margin: 5px 5px 5px 5px;
 }
 
 element-icon {
